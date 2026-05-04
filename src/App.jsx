@@ -25,7 +25,7 @@ const [index,setIndex]=useState(1);
     printUserData = userData.map(function (elem, idx) {
       
       return <div key={idx}>
-        <a href={elem.url} target='_blank'>
+        <a href={elem.url} target='_blank' rel='noopener nooreferrer'>
         <div className='h-40 w-45 rounded-xl overflow-hidden'>
 
         <img className='h-full w-full object-cover' src={elem.download_url} alt="" />
